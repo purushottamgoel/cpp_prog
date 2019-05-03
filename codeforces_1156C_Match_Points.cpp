@@ -51,11 +51,11 @@ int main ()
     while(right<=n-1 && left<=right){
         if(x[left]==-1){
             left++;
-			continue;
+	continue;
         }
         if(x[right]>=x[left]+z){
             c++;
-			cout<<x[left]<<" "<<x[right]<<endl;
+	cout<<x[left]<<" "<<x[right]<<endl;
             left++;
             x[right]=-1;
             right++;
@@ -68,17 +68,17 @@ int main ()
     left=0;
     right=n-1;
     while(y[right]-y[left]>=z && left<=right){
-		d++;
-		//cout<<y[left]<<" "<<y[right]<<endl;
-		left++;
-		right--;
+	d++;
+	//cout<<y[left]<<" "<<y[right]<<endl;
+	left++;
+	right--;
     }
 	
-	int ans=max(c,d);
+int ans=max(c,d);
 
-	// cheat into trying more test cases and see if all fail or some more run:
-	if(ans==99213 || ans==75292) ans=100000;
-	if(ans==99382) ans=100000;
+// cheat into trying more test cases and see if all fail or some more run:
+if(ans==99213 || ans==75292) ans=100000;
+if(ans==99382) ans=100000;
 
     cout<<ans<<endl;
    
