@@ -40,7 +40,7 @@ int main ()
     for(int i=0; i<n; i++){
         cin>>in;
         x.push_back(in);
-		y.push_back(in);
+	y.push_back(in);
     }
     sort(x.begin(),x.end());
     sort(y.begin(),y.end());
