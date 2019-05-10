@@ -84,3 +84,23 @@ if(ans==99382) ans=100000;
    
     return 0;
 }
+
+
+/*
+Interesting Test case below
+===========================
+14 16
+27 37 50 11 16 42 45 43 31 42 40 29 42 32
+
+Analysis of test case:
+======================
+Sorted list:
+11 16 27 29 31 32 37 40 42 42 42 43 45 50
+1  2  1  3  4  2                    3  4 --> algo#1
+1  2  5  3  4  2              1  5  3  4 --> real / max answer
+1  2  3                          3  2  1 --> algo#2
+5  4  3  2     1           5  4  3  2  1 --> algo#3
+
+Above rows show how pairs are matched in each of the algo's case.
+*/
+
