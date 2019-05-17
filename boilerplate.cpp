@@ -18,7 +18,7 @@
 #include <cstdlib>
 #include <list>
 #include <stdexcept>
-
+// g++ -O2 -lm -std=c++0x
 // start --> time measurement
 // #define TIMING // comment this to disable all timing measurements
 long long timerstart;
@@ -40,15 +40,30 @@ long long timerstart;
  
 using namespace std;
  
+int x,n;
+vector<int> v;
+
+void print_v()
+{
+	for(int i=0;i<n;i++)
+		cout << v[i] << " ";
+	cout << endl;
+}
+	
 int main ()
 {
 //    std::ios_base::sync_with_stdio(false), cin.tie(0) , cout.tie(0);
 //    freopen("input.txt", "r", stdin);
 //    freopen("output.txt", "w", stdout);
-
-	cout << "hello world" << endl;
 	
-//	while(getchar());
-    return 0;
+	cin >> n;	
+	for(int i=0;i<n;i++){
+		cin >> x;
+		v.push_back(x);
+	}
+	
+	print_v();
+	
+	return 0;
 }
 
