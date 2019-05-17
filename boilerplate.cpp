@@ -43,9 +43,9 @@ using namespace std;
 int x,n;
 vector<int> v;
 
-void printv(vector<int> vec)
+void printv(vector<int> vec, int nnn)
 {
-	for(int i=0;i<n;i++)
+	for(int i=0;i<nnn;i++)
 		cout << vec[i] << " ";
 	cout << endl;
 }
@@ -62,7 +62,7 @@ int main ()
 		v.push_back(x);
 	}
 	
-	printv(v);
+	printv(v,n);
 	
 	return 0;
 }
