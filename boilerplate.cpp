@@ -43,10 +43,10 @@ using namespace std;
 int x,n;
 vector<int> v;
 
-void print_v()
+void printv(vector<int> vec)
 {
 	for(int i=0;i<n;i++)
-		cout << v[i] << " ";
+		cout << vec[i] << " ";
 	cout << endl;
 }
 	
@@ -62,8 +62,10 @@ int main ()
 		v.push_back(x);
 	}
 	
-	print_v();
+	printv(v);
 	
 	return 0;
 }
+
+
 
