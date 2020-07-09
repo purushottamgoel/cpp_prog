@@ -78,8 +78,7 @@ int main ()
 	sort(v.begin(),v.end());
 	
 	//printv(v,n);
-	
-	
+		
 	for(int i=0;i<n;i++){
 		dt=v[i];
 		d = dt%100;
