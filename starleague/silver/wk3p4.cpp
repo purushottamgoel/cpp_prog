@@ -52,7 +52,6 @@ long long timerstart;
 
 using namespace std;
  
-int x,n;
 vector<int> v;
 
 void printv(vector<int> vec, int nnn)
@@ -67,14 +66,29 @@ int main ()
 //    std::ios_base::sync_with_stdio(false), cin.tie(0) , cout.tie(0);
 //    freopen("input.txt", "r", stdin);
 //    freopen("output.txt", "w", stdout);
+	int m,d,y,dt,n;
 	
 	cin >> n;	
 	for(int i=0;i<n;i++){
-		cin >> x;
-		v.push_back(x);
+		cin >> m >> d >> y;
+		dt = y*10000 + m*100 + d;
+		v.push_back(dt);
 	}
 	
-	printv(v,n);
+	sort(v.begin(),v.end());
+	
+	//printv(v,n);
+	
+	
+	for(int i=0;i<n;i++){
+		dt=v[i];
+		d = dt%100;
+		dt = dt/100;
+		m = dt%100;
+		dt = dt/100;
+		y=dt;
+		cout << m << " " << d << " " << y << endl;
+	}
 	
 	return 0;
 }
