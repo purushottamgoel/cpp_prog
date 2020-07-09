@@ -2,6 +2,10 @@ C++ Compilers and run
 https://www.onlinegdb.com/online_c++_compiler
 https://ideone.com/  --> sometimes very slow to compile and run
 https://rextester.com/l/cpp_online_compiler_gcc     --> faster usually
+http://cpp.sh/  --> used by cplusplus.com 
+https://repl.it/  --> simple
+
+
 
 Code collaboration
 http://collabedit.com/
